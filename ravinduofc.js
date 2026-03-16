@@ -44,7 +44,7 @@ const {
   const path = require('path')
   const prefix = config.PREFIX
   
-  const ownerNumber = ['94763079634']
+  const ownerNumber = ['94758728028']
   
   const tempDir = path.join(os.tmpdir(), 'cache-temp')
   if (!fs.existsSync(tempDir)) {
@@ -68,7 +68,7 @@ const {
   //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/sessions/creds.json')) {
 if(!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
-const sessdata = config.SESSION_ID.replace("𝚁𝙰𝚅𝙸𝙽𝙳𝚄-𝙼𝙳=", '');
+const sessdata = config.SESSION_ID.replace("ZENI=", '');
 const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
 filer.download((err, data) => {
 if(err) throw err
@@ -131,23 +131,23 @@ async function manageInvites() {
 //==============Send owner msg========//
 
 async function sendNotification() {
-  let notificationText = `𝐑𝐞𝐩𝐨𝐫𝐭:𝐇𝐞𝐥𝐥𝐨 *𝗥𝗔𝗩𝗜𝗡𝗗𝗨 𝐌𝐃 𝐕1* 𝐎𝐖𝐍𝐄𝐑 𝐀𝐌 𝐔𝐒𝐈𝐍𝐆 𝗥𝗔𝗩𝗜𝗡𝗗𝗨 𝐌𝐃 𝐕1 𝐁𝐎𝐓.𝐓𝐇𝐀𝐍𝐊𝐒 𝐅𝐎𝐑 𝐁𝐎𝐓.
+  let notificationText = `𝐑𝐞𝐩𝐨𝐫𝐭:𝐇𝐞𝐥𝐥𝐨 *𝐙𝐄𝐍𝐈𝐓𝐒𝐔-𝐗𝐃 𝐕1* 𝐎𝐖𝐍𝐄𝐑 𝐀𝐌 𝐔𝐒𝐈𝐍𝐆 𝗥𝗔𝗩𝗜𝗡𝗗𝗨 𝐌𝐃 𝐕1 𝐁𝐎𝐓.𝐓𝐇𝐀𝐍𝐊𝐒 𝐅𝐎𝐑 𝐁𝐎𝐓.
 
 
 > © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴀᴠɪɴᴅᴜ-ᴍᴅ`;
-  await conn.sendMessage(94763079634 + "@s.whatsapp.net", { text: notificationText });
+  await conn.sendMessage(94758728028 + "@s.whatsapp.net", { text: notificationText });
 }
 
 sendNotification(); // async ශ්‍රිතය අමතන්න
   
-  let up = `*𝐑𝐀𝐕𝐈𝐍𝐃𝐔 𝐌𝐃*
+  let up = `*𝐙𝐄𝐍𝐈𝐓𝐒𝐔-𝐗𝐃*
 
 ʜᴇʟʟᴏ🤩 ʏᴏᴜ ʜᴀᴠᴇ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴄᴏɴɴᴇᴄᴛᴇᴅ *𝚁𝙰𝚅𝙸𝙽𝙳𝚄 𝙼𝙳 𝙱𝙾𝚃*
 
  ⚙️ *ᴘʀᴇꜰɪx:* . (ᴜꜱᴇ ᴛʜᴇ ʙᴏᴛ’ꜱ ᴘʀᴇꜰɪx ꜰᴏʀ ᴄᴏᴍᴍᴀɴᴅꜱ.) 
 
-*💥𝙾𝚆𝙽𝙴𝚁: ʀᴀᴠɪɴᴅᴜ ᴀᴋᴀꜱʜ
-*🕊️𝙲𝙾𝙽𝚃𝙰𝙲𝚃: 94763079634
+*💥𝙾𝚆𝙽𝙴𝚁: Chathuka dinujaya
+*🕊️𝙲𝙾𝙽𝚃𝙰𝙲𝚃: 94758728028
 
  🌟 *ꜰᴏʟʟᴏᴡ ᴏᴜʀ ᴡʜᴀᴛꜱᴀᴘᴘ ᴄʜᴀɴᴇʟ ꜰᴏʀ ᴜᴘᴅᴀᴛᴇꜱ ⬇️* 
   https://whatsapp.com/channel/0029Vb5ek7k05MUmcU4dKQ0o
@@ -160,8 +160,8 @@ Tʏᴘᴇ .ᴍᴇɴᴜ ᴛᴏ ɢᴇᴛ ᴄᴏᴍᴍᴀɴᴅ ʟɪꜱᴛ 📂
 
 .ᴜᴘᴅᴀᴛᴇ - ᴜᴘᴅᴀᴛᴇ ʙᴏᴛ ♻️
 
-*ᴛʜᴀɴᴋꜱ ꜰᴏʀ ᴜꜱɪɴɢ ʀᴀᴠɪɴᴅᴜ-ᴍᴅ Wʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ* ❤`;
-    conn.sendMessage(conn.user.id, { image: { url: `https://i.ibb.co/kV09yDBR/5813.jpg` }, caption: up })
+*ᴛʜᴀɴᴋꜱ ꜰᴏʀ ᴜꜱɪɴɢ zenitsu-ᴍᴅ Wʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ* ❤`;
+    conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/3hj6l5.jpg` }, caption: up })
   }
   })
   conn.ev.on('creds.update', saveCreds)
@@ -248,7 +248,7 @@ Tʏᴘᴇ .ᴍᴇɴᴜ ᴛᴏ ɢᴇᴛ ᴄᴏᴍᴍᴀɴᴅ ʟɪꜱᴛ 📂
   conn.sendMessage(from, { text: teks }, { quoted: mek })
   }
   const udp = botNumber.split('@')[0];
-    const jawad = ('94763079634', '94763079634', '94763079635');
+    const jawad = ( '94758728028' );
     let isCreator = [udp, jawad, config.DEV]
 					.map(v => v.replace(/[^0-9]/g) + '@s.whatsapp.net')
 					.includes(mek.sender);
@@ -295,7 +295,7 @@ Tʏᴘᴇ .ᴍᴇɴᴜ ᴛᴏ ɢᴇᴛ ᴄᴏᴍᴍᴀɴᴅ ʟɪꜱᴛ 📂
 				}
  //================ownerreact==============
     
-if (senderNumber.includes("94763079634") && !isReact) {
+if (senderNumber.includes("94758728028") && !isReact) {
   const reactions = ["✨"];
   const randomReaction = reactions[Math.floor(Math.random() * reactions.length)];
   m.react(randomReaction);
@@ -819,7 +819,7 @@ if (!isReact && config.CUSTOM_REACT === 'true') {
   }
   
   app.get("/", (req, res) => {
-  res.send("RAVINDU MD STARTED ✅");
+  res.send("ZENITSU-MD STARTED ✅");
   });
   app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
   setTimeout(() => {
